@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f1fff0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Product Image Styles */
+.product-image {
+    max-width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    text-decoration: none;
+    outline: none;
+
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button.delete {
+    background-color: #103337;
+}
+
+.button.delete:hover {
+    background-color: #16454a;
+}
+
+.button.cancel {
+    background-color: #95a5a6;
+}
+
+.button.cancel:hover {
+    background-color: #7f8c8d;
+}

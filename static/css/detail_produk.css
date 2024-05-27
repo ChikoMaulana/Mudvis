@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f1fff0;
+}
+
+.detail {
+    margin: 6rem auto 0 auto;
+    padding: 20px 40px;
+}
+
+.produk {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.produk > img {
+    width: 200px;
+}
+
+.barang {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.barang > .nama {
+    font-size: 28px;
+}
+
+.barang > .harga {
+    font-size: 18px;
+}
+
+.desk {
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.desk > .teks {
+    font-size: 21px;
+}
+
+.desk > .data {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    font-size: 15px;
+}
+
+.fa-star.gold {
+    color: #ffc700;
+}
+
+.fa-star.grey {
+    color: #d7dae8;
+}

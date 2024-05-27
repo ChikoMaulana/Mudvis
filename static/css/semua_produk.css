@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f1fff0;
+}
+
+.search {
+    margin: 6rem auto 0 auto;
+    padding: 20px 40px;
+}
+
+.search-data > form {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.search-data > form > input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+
+    font-size: 16px;
+    color: #263238;
+}
+
+.search-data > form > button {
+    text-decoration: none;
+
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #103337;
+}
+
+.data {
+    margin: 1rem auto 4rem;
+    padding: 20px 40px;
+
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.data > .card {
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background-color: #103337;
+    border-radius: 5px;
+
+    padding: 25px 20px;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.data > .card > img {
+    width: 100px;
+    margin: auto;
+}
+
+.data > .card > .barang {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5px;
+    color: #fff;
+}
+
+.data > .card > .barang > h1 {
+    font-size: 20px;
+}
+
+.data > .card > .barang > p {
+    font-size: 16px;
+}
+
+.fa-star.gold {
+    color: #ffc700;
+}
+
+.fa-star.grey {
+    color: #d7dae8;
+}

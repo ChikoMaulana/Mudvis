@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f1fff0;
+}
+
+.banner {
+    margin: 80px auto 0 auto;
+    padding: 40px 40px 20px 40px;
+}
+
+.banner > img {
+    width: 100%;
+}
+
+.mudvis {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 40px;
+    height: 320px;
+    gap: 50px;
+}
+
+.produk {
+    background-color: #103337;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.produk-1 > img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+
+    top: 10%;
+    left: 16%;
+}
+
+.produk-1 {
+    display: flex;
+    position: relative;
+    
+    width: 100%;
+}
+
+.produk-1 > .data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.produk-1 > .data > .name {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.produk-1 > .data > .price {
+    color: #fff;
+}
+
+.produk-data {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.produk-2 {
+    display: flex;
+    position: relative;
+    width: 600px;
+    height: 150px;
+
+    margin-left: auto;
+}
+
+.produk-2 > img {
+    position: absolute;
+    top: 16%;
+    right: 8%;
+
+    width: 150px;
+}
+
+.produk-2 > .data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.produk-2 > .data > .name {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.produk-2 > .data > .price {
+    color: #fff;
+}
+
+.produk-data-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+    height: 120px;
+}
+
+.produk-3,
+.produk-4 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 280px;
+}
+
+.produk-3 > img {
+    position: absolute;
+    top: 16%;
+    right: 8%;
+
+    width: 80px;
+}
+
+.produk-4 > img {
+    position: absolute;
+    top: 25%;
+    right: 4%;
+
+    width: 130px;
+}
+
+.produk-3 > .data,
+.produk-4 > .data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+}
+
+.produk-3 > .data > .name,
+.produk-4 > .data > .name {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.produk-3 > .data > .price,
+.produk-4 > .data > .price {
+    color: #fff;
+    font-size: 14px;
+}
+
+.trending {
+    margin: auto;
+    display: flex;
+    padding: 20px 40px;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.top > .title {
+    font-size: 25px;
+    color: #103337;
+
+    font-weight: bold;
+}
+
+.bottom {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card > img {
+    height: 250px;
+}
+
+.card > .name {
+    color: #103337;
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+.card > .price {
+    color: #16454a;
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+.fa-star.gold {
+    color: #ffc700;
+}
+
+.fa-star.grey {
+    color: #d7dae8;
+}
+
+.trending > .button {
+    text-decoration: none;
+    border: #103337 1px solid;
+    color: #103337;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 40px auto 20px auto;
+    padding: 10px 50px;
+}

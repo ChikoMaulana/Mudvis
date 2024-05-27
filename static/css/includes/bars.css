@@ -1,0 +1,142 @@
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #fff;
+
+    padding: 20px 40px;
+    z-index: 99;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.circle > img {
+    width: 45px;
+    height: 45px;
+}
+
+.logo > .name {
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #103337;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #103337;
+}
+
+.nav-links > li:hover {
+    color: #16454a;
+}
+
+footer {
+    background-color: #103337;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-content > .content:last-child {
+    margin-left: auto;
+}
+
+.footer-content > .content:last-child > .logo {
+    justify-content: flex-end;
+}
+
+.footer-content > .content {
+    width: 100%;
+}
+
+.footer-content > .content > .title {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.footer-content > .content > .links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    list-style: none;
+}
+
+.footer-content > .content > .links > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-content > .content > .links > li > a:hover {
+    color: #e7e7e7;
+}
+
+.content > .logo > img {
+    width: 50px;
+}
+
+.content > .logo > .nama {
+    font-size: 25px;
+}
+
+.content > .medsos {
+    display: flex;
+    gap: 20px;
+}
+
+.content > .medsos > a {
+    font-size: 25px;
+    color: #fff;
+}
+
+.content > .medsos > a:hover {
+    color: #e7e7e7;
+}
+
+.content > .medsos > a:first-child {
+    margin-left: auto;
+}
+
+footer > .copy {
+    text-align: center;
+    margin: 30px auto 0 auto;
+
+    font-size: 16px;
+}

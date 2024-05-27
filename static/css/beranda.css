@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f1fff0;
+}
+
+.banner {
+    margin: 80px auto 0 auto;
+    padding: 40px 40px 20px 40px;
+}
+
+.mudvis {
+    margin: auto;
+    padding: 20px 40px;
+}
+
+.banner > img {
+    width: 100%;
+}
+
+.desk {
+    margin: auto;
+    display: flex;
+    gap: 80px;
+}
+
+.desk > img {
+    width: 450px;
+}
+
+.desk-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.desk-content > .title {
+    text-align: right;
+    color: #103337;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.desk-content > .text {
+    text-align: right;
+    color: #103337;
+
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.desk-content > .button {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 10px 50px;
+    background-color: #103337;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.desk-content > .button:hover {
+    background-color: #16454a;
+}
+
+.about {
+    background-color: #103337;
+    padding: 40px 40px;
+}
+
+.about-desk {
+    display: flex;
+}
+
+.about-desk > img {
+    width: 450px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    padding-right: 100px;
+}
+
+.about-content > .title {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.about-content > .content {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.about-content > .button {
+    text-decoration: none;
+    border: #fff 1px solid;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-right: auto;
+    padding: 10px 50px;
+}
+
+.about-content > .button:hover {
+    border: #e7e7e7 1px solid;
+    color: #e7e7e7;
+}
+
+.layanan {
+    display: flex;
+    padding: 80px 40px;
+}
+
+.layanan-content {
+    display: flex;
+    gap: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.card > img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.card > .title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card > .content {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+

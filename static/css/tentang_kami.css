@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* navbar start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f1fff0;
+}
+
+/* Content Start */
+.cerita_kami {
+    padding: 20px 40px;
+    margin: auto;
+    text-align: center;
+    color: #103337;
+}
+
+.cerita_kami > h1 {
+    padding-top: 8rem;
+    color: #103337;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.cerita_kami .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.cerita_kami .content .image {
+    flex: 0 0 auto;
+}
+
+.cerita_kami .content .image > img {
+    width: 400px;
+    height: 400px;
+}
+
+.cerita_kami .content .text {
+    flex: 1 1 auto;
+    padding-left: 190px;
+    text-align: left;
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.vismisi {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    padding: 20px 40px;
+    margin-top: 50px;
+}
+
+.visi {
+    background-color: #103337;
+    border-radius: 20px;
+}
+
+.visi > h1 {
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.visi > span {
+    margin: auto;
+    display: block;
+    height: 4px;
+    width: 100px;
+    margin-top: 5px;
+
+    background-color: #fff;
+}
+.visi > p {
+    color: #fafafa;
+    text-align: center;
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.misi {
+    background-color: #103337;
+    border-radius: 20px;
+}
+
+.misi > h1 {
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+
+    font-size: 24px;
+}
+
+.misi > span {
+    margin: auto;
+    display: block;
+    height: 4px;
+    width: 100px;
+    margin-top: 5px;
+
+    background-color: #fff;
+}
+.misi > p {
+    color: #fafafa;
+    text-align: center;
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.visi,
+.misi {
+    width: calc(50%-25px);
+    height: 250px;
+}
+
+.tim_kami {
+    padding: 20px 40px;
+    margin: auto;
+
+    margin-top: 50px;
+}
+
+.tim_kami > .judul {
+    text-align: center;
+}
+.tim_kami > .judul > .h1 {
+    color: #103337;
+    font-family: "poppins", "sans-serif";
+    font-size: 40px;
+}
+.tim_kami > .judul > h1 {
+    color: #103337;
+    font-family: "poppins", "sans-serif";
+    font-weight: bold;
+    font-size: 32px;
+}
+.tim_kami > .judul > p {
+    color: #263238;
+    font-family: "poppins", "sans-serif";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card > .card_img_top {
+    width: 385px;
+    height: 241px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 50px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card > .profile {
+    display: flex;
+
+    background-color: #103337;
+    border-radius: 0 20px 20px 20px;
+
+    margin: auto;
+}
+
+.card .profile > .card_img_top {
+    width: 200px;
+    object-fit: cover;
+
+    margin: auto;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h2 {
+    font-family: "poppins", sans-serif;
+    font-weight: medium;
+    color: #103337;
+    margin-top: 0%;
+}
+
+.card-content p {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    color: #103337;
+}
+
+.social-media {
+    margin-top: 5px;
+}
+
+.social-media a {
+    color: #103337;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
