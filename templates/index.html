@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mudvis</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/beranda.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/includes/bars.css') }}" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        {% include 'includes/navbar.html' %} 
+        <section class="banner">
+            <img id="bannerImg" src="{{ url_for('static', filename='image/banner.png') }}" alt="Banner 1" />
+        </section>
+
+        <section class="mudvis">
+            <div class="desk">
+                <img src="{{ url_for('static', filename='image/desk_image.svg') }}" alt="Desk Image" />
+                <div class="desk-content">
+                    <h1 class="title">Mudvis Studio</h1>
+                    <p class="text">Menjadi pusat percetakan terdepan yang menyediakan layanan cepat, berkualitas, dan harga terjangkau</p>
+
+                    <a href="/produk" class="button">Jelajahi</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-desk">
+                <div class="about-content">
+                    <h1 class="title">Tentang kami</h1>
+                    <p class="content">
+                        Mudvis Studio adalah sebuah platform percetakan online yang bertujuan untuk menyediakan solusi cetak yang praktis, berkualitas, dan efisien bagi pelanggan di seluruh Indonesia. Sebagai produsen yang berpengalaman dalam industri percetakan, kami menghadirkan layanan yang
+                        inovatif dan terjangkau untuk memenuhi kebutuhan cetak Anda dengan cepat dan mudah. Komitmen kami adalah memberikan pengalaman berbelanja yang menyenangkan dan memuaskan bagi pelanggan
+                    </p>
+                    <a href="/tentang_kami" class="button">Selengkapnya</a>
+                </div>
+                <img src="{{ url_for('static', filename='image/about_image.svg') }}" alt="About Image" />
+            </div>
+        </section>
+
+        <section class="layanan">
+            <div class="layanan-content">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='image/layanan_image.svg') }}" alt="Layanan image" />
+                    <h1 class="title">Layanan cepat</h1>
+                    <p class="content">Kami menawarkan layanan cepat yang memungkinkan Anda untuk mendapatkan produk cetak Anda dengan waktu yang singkat tanpa mengorbankan kualitas.</p>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='image/kualitas_image.svg') }}" alt="Kualitas Image" />
+                    <h1 class="title">Berkualitas</h1>
+                    <p class="content">Kami menggunakan peralatan cetak terkini dan bahan berkualitas tinggi untuk memastikan bahwa setiap produk cetak yang kami hasilkan memenuhi standar kualitas tertinggi.</p>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='image/harga_image.svg') }}" alt="Harga Image" />
+                    <h1 class="title">Harga terjangkau</h1>
+                    <p class="content">Kami berkomitmen untuk memberikan nilai terbaik bagi pelanggan kami, sehingga Anda dapat mendapatkan hasil cetak yang Anda inginkan tanpa harus merogoh kocek terlalu dalam.</p>
+                </div>
+            </div>
+        </section>
+
+        {% include 'includes/footer.html' %}
+    </body>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>

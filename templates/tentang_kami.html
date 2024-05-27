@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mudvis</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/tentang_kami.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/includes/bars.css') }}" />
+    </head>
+    <body>
+        {% include 'includes/navbar.html' %}
+
+        <div class="cerita_kami">
+            <h1>Cerita Kami</h1>
+            <div class="content">
+                <div class="image">
+                    <img src="{{ url_for('static', filename='image/cerita_image.svg') }}" alt="" />
+                </div>
+                <div class="text">
+                    <p>
+                        <i>Mudvis Studio</i> didirikan sebagai respons terhadap kebutuhan akan solusi percetakan modern di era digital. Dalam upaya untuk menyederhanakan proses cetak, Mudvis Studio lahir sebagai platform percetakan online pada tahun 2022. Dengan berfokus pada kecepatan, kualitas,
+                        dan kemudahan akses, Mudvis Studio menawarkan solusi praktis bagi pelanggan yang ingin mencetak produk dengan cepat dan efisien.
+                    </p>
+                    <br />
+                    <p>
+                        Dibangun dengan semangat inovasi, Mudvis Studio terus berkembang seiring berjalannya waktu. Dengan memanfaatkan teknologi terkini dan mempertahankan standar kualitas tinggi, Mudvis Studio telah menjadi mitra percetakan yang dipercaya oleh pelanggan dari berbagai sektor dan
+                        industri.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="vismisi">
+            <div class="visi">
+                <h1 class="title">Visi</h1>
+                <span></span>
+                <p class="text-visi">Menjadi pusat percetakan terdepan yang menyediakan layanan cepat, berkualitas, dan harga terjangkau</p>
+            </div>
+            <div class="misi">
+                <h1 class="title">Misi</h1>
+                <span></span>
+                <p class="text-visi">Menjadi pusat percetakan terdepan yang menyediakan layanan cepat, berkualitas, dan harga terjangkau</p>
+            </div>
+        </div>
+        <div class="tim_kami">
+            <div class="judul">
+                <h1>Tim Kami</h1>
+                <p>Menginspirasi, Menggerakkan, Menyatukan</p>
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="profile">
+                        <img src=".{{ url_for('static', filename='image/profile.png') }}" class="card_img_top" alt="profile" />
+                    </div>
+
+                    <div class="card-content">
+                        <h2>Nayla</h2>
+                        <p>Fotografer - Designer - Content Creator</p>
+                        <div class="social-media">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'includes/footer.html' %}
+    </body>
+</html>

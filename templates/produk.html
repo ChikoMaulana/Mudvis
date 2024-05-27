@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mudvis - Produk</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/produk.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/includes/bars.css') }}" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        {% include 'includes/navbar.html' %}
+
+        <section class="banner">
+            <img id="bannerImg" src="{{ url_for('static', filename='image/banner.png') }}" alt="Banner 1" />
+        </section>
+
+        <section class="mudvis">
+            <div class="produk-1 produk" onclick="window.location.href='/detail_produk/6644625a53d3ae739b0c6a64'">
+                <div class="data">
+                    <p class="name">Totebag</p>
+                    <p class="price">Rp. 9.000 / PCS</p>
+                </div>
+                <img src="{{ url_for('static', filename='image/totebag.png') }}" alt="Totebag" class="image-produk" />
+            </div>
+            <div class="produk-data">
+                <div class="produk-2 produk" onclick="window.location.href='/detail_produk/664454145a81f3e862087ff2'">
+                    <div class="data">
+                        <p class="name">Mousepad Custom</p>
+                        <p class="price">Rp. 50.000 / PCS</p>
+                    </div>
+                    <img src="{{ url_for('static', filename='image/mousepad.png') }}" alt="Mousepad" class="image-produk" />
+                </div>
+                <div class="produk-data-2">
+                    <div class="produk-3 produk" onclick="window.location.href='/detail_produk/664461efd1dbc0b91b345401'">
+                        <div class="data">
+                            <p class="name">Lanyard Custom</p>
+                            <p class="price">Rp. 5.000 / PCS</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='image/lanyard.png') }}" alt="Lanyard" class="image-produk" />
+                    </div>
+                    <div class="produk-4 produk" onclick="window.location.href='/detail_produk/6644623f53d3ae739b0c6a63'">
+                        <div class="data">
+                            <p class="name">Enamel Mug custom</p>
+                            <p class="price">Rp. 17.000 / PCS</p>
+                        </div>
+                        <img src="{{ url_for('static', filename='image/mug.png') }}" alt="Mug" class="image-produk" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending">
+            <div class="top">
+                <h1 class="title">Trending Produk</h1>
+                <p class="desk">Temukan yang sedang tren dan paling diminati.</p>
+            </div>
+            <div class="bottom">
+                {% for product in top_rated_products %}
+                <a class="card" href="{{ url_for('detail_product', product_id=product['_id']) }}">
+                    <img class="image-produk" src="{{ product['image'] }}" alt="{{ product['name'] }}" />
+                    <p class="name">{{ product['name'] }}</p>
+                    <p class="price">Rp. {{ product['price'] }} / PCS</p>
+                    <div class="stars">
+                        {% for i in range(5) %} {% if i < product['rating'] %}
+                        <i class="fa fa-star gold"></i>
+                        {% else %}
+                        <i class="fa fa-star grey"></i>
+                        {% endif %} {% endfor %}
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+            <a class="button" href="/semua_produk">Lebih banyak</a>
+        </section>
+
+        {% include 'includes/footer.html' %}
+    </body>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>

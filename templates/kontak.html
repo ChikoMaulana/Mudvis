@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mudvis - Kontak</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/kontak.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/includes/bars.css') }}" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        {% include 'includes/navbar.html' %}
+
+        <main class="kontak">
+            <section class="input">
+                <div class="top">
+                    <h1 class="title">Kontak kami</h1>
+                    <p class="name">Jangan ragu untuk menghubungi kami kapan saja.</p>
+                </div>
+                <div class="bottom">
+                    <form action="/kontak" method="post">
+                        <input type="text" name="nama" id="nama" placeholder="Nama" />
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                        <input type="text" name="pesan" id="pesan" placeholder="Pesan" />
+
+                        <button type="submit">Kirim</button>
+                    </form>
+                </div>
+            </section>
+            <section class="informasi">
+                <div class="top">
+                    <h1 class="title">Informasi</h1>
+                </div>
+                <div class="middle">
+                    <div class="data">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p class="name"><a href="mailto:mudavisualindonesia@gmail.com" target="_blank">mudavisualindonesia@gmail.com</a></p>
+                    </div>
+                    <div class="data">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="name">0866-990-506</p>
+                    </div>
+                    <div class="data">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="name">Jl. KH. Ahmad Dahlan No.65-83, Kp. Tengah, Kec. Sukajadi, Kota Pekanbaru, Riau 28122 Pekanbaru, Riau, Indonesia 28122</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="media-sosial">
+                        <a href="https://www.instagram.com/mudavisualindonesia" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61555730963437" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=6281266990506" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://linktr.ee/mudavisual" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        {% include 'includes/footer.html' %}
+    </body>
+</html>
